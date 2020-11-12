@@ -11,6 +11,9 @@ const renderWisdoms = function () {
     for (let wisdom of wisdoms) {
         $("ul").append(`<li id=${wisdom.id}>`+ wisdom.text + "</li>")
     }
+    for (let wisdom of temp) {
+        $("ul").append(`<li id=${wisdom.id}>`+ wisdom.text + "</li>")
+    }
 }
 
 const addWisdomToArray = function (str) {
@@ -30,3 +33,5 @@ const addWisdom = function () {
     $('#input').val("")
     renderWisdoms(wisdoms)
 }
+
+console.log(wisdoms)
